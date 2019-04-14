@@ -76,12 +76,12 @@ public class IconTxtView extends FrameLayout {
             case 1:
                 lp1.gravity = Gravity.CENTER | Gravity.BOTTOM;
                 lp2.gravity = Gravity.CENTER | Gravity.TOP;
-                lp1.setMargins(0, (int) textToP, 0, (int) textToP);
+                lp1.setMargins(0, (int) textToP, 0, 0);
                 break;
             case 2:
                 lp1.gravity = Gravity.CENTER | Gravity.TOP;
                 lp2.gravity = Gravity.CENTER | Gravity.BOTTOM;
-                lp1.setMargins(0, (int) textToP, 0, (int) textToP);
+                lp1.setMargins(0, 0, 0, (int) textToP);
                 break;
             case 3:
                 lp1.gravity = Gravity.CENTER | Gravity.END;
