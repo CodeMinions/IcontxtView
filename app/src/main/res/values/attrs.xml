@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IconTxtView">
+
+        <attr name="tint" format="color" />
+        <attr name="back" format="reference|color" />
+        <attr name="iconLocation" >
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="start" value="3" />
+            <enum name="end" value="4" />
+        </attr>
+
+        <attr name="text" format="reference|string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textToP" format="dimension|reference" />
+
+        <attr name="icon" format="reference" />
+        <attr name="iconTint" format="color|reference" />
+        <attr name="iconS" format="dimension|string"/>
+
+    </declare-styleable>
+</resources>
