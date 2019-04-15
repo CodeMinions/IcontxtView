@@ -124,4 +124,76 @@ public class IconTxtView extends FrameLayout {
         textView = findViewById(R.id.icontxt_t);
         imageView = findViewById(R.id.icontxt_i);
     }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public float getTextSize() {
+        return textSize;
+    }
+
+    public void setTextSize(float textSize) {
+        this.textSize = textSize;
+    }
+
+    public int getTextColor() {
+        return textColor;
+    }
+
+    public void setTextColor(int textColor) {
+        this.textColor = textColor;
+    }
+
+    public float getTextToP() {
+        return textToP;
+    }
+
+    public void setTextToP(float textToP) {
+        this.textToP = textToP;
+    }
+
+    public Drawable getIcon() {
+        return icon;
+    }
+
+    public void setIcon(Drawable icon) {
+        this.icon = icon;
+    }
+
+    public int getIconTint() {
+        return iconTint;
+    }
+
+    public void setIconTint(int iconTint) {
+        this.iconTint = iconTint;
+    }
+
+    public float getIconS() {
+        return iconS;
+    }
+
+    public void setIconS(float iconS) {
+        this.iconS = iconS;
+    }
+
+    public int getTint() {
+        return tint;
+    }
+
+    public void setTint(int tint) {
+        this.tint = tint;
+    }
+
+    public Drawable getBack() {
+        return back;
+    }
+
+    public void setBack(Drawable back) {
+        this.back = back;
+    }
 }
