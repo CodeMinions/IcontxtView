@@ -125,75 +125,84 @@ public class IconTxtView extends FrameLayout {
         imageView = findViewById(R.id.icontxt_i);
     }
 
-    public String getText() {
-        return text;
-    }
-
+    /**
+     * 关于Setter方法
+     * 无法修改textTop，iconSize，currentLay的值
+     */
     public void setText(String text) {
         this.text = text;
+        textView.setText(text);
+    }
+
+    public void setTextSize(float textSize) {
+        this.textSize = textSize;
+        textView.setTextSize(textSize);
+    }
+
+    public void setTextColor(int textColor) {
+        this.textColor = textColor;
+        textView.setTextColor(textColor);
+    }
+
+    public void setIcon(Drawable icon) {
+        this.icon = icon;
+        imageView.setImageDrawable(icon);
+    }
+
+    public void setIconTint(int iconTint) {
+        this.iconTint = iconTint;
+        imageView.setColorFilter(iconTint);
+    }
+
+    public void setTint(int tint) {
+        if (tint != -1) {
+            this.tint = tint;
+            imageView.setColorFilter(tint);
+            textView.setTextColor(tint);
+        }
+    }
+
+    public void setBack(Drawable back) {
+        this.back = back;
+        this.setBackground(back);
+    }
+
+    /**
+     * Getter方法
+     */
+    public String getText() {
+        return text;
     }
 
     public float getTextSize() {
         return textSize;
     }
 
-    public void setTextSize(float textSize) {
-        this.textSize = textSize;
-    }
-
     public int getTextColor() {
         return textColor;
-    }
-
-    public void setTextColor(int textColor) {
-        this.textColor = textColor;
-    }
-
-    public float getTextToP() {
-        return textToP;
-    }
-
-    public void setTextToP(float textToP) {
-        this.textToP = textToP;
     }
 
     public Drawable getIcon() {
         return icon;
     }
 
-    public void setIcon(Drawable icon) {
-        this.icon = icon;
-    }
-
     public int getIconTint() {
         return iconTint;
-    }
-
-    public void setIconTint(int iconTint) {
-        this.iconTint = iconTint;
     }
 
     public float getIconS() {
         return iconS;
     }
 
-    public void setIconS(float iconS) {
-        this.iconS = iconS;
-    }
-
     public int getTint() {
         return tint;
-    }
-
-    public void setTint(int tint) {
-        this.tint = tint;
     }
 
     public Drawable getBack() {
         return back;
     }
 
-    public void setBack(Drawable back) {
-        this.back = back;
+    public int getCurrentLay() {
+        return currentLay;
     }
 }
