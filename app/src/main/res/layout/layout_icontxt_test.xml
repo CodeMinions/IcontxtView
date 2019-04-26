@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:icon="@drawable/ic_launcher_foreground"
+        app:icon="@drawable/ic_icon"
         app:iconTint="#D81B60"
         app:iconLocation="end"
         app:iconS="40dp"

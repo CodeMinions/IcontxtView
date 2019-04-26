@@ -40,6 +40,10 @@ public class IconTxtView extends FrameLayout {
     Drawable back;
     int currentLay;
 
+    public IconTxtView(Context context){
+        this(context, null);
+    }
+
     @TargetApi(Build.VERSION_CODES.O)
     public IconTxtView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -147,6 +151,12 @@ public class IconTxtView extends FrameLayout {
     public void setIcon(Drawable icon) {
         this.icon = icon;
         imageView.setImageDrawable(icon);
+    }
+
+    public void setIconS(float size){
+        LayoutParams lp = (LayoutParams) imageView.getLayoutParams();
+        lp.height = (int) size;
+        imageView.setLayoutParams(lp);
     }
 
     public void setIconTint(int iconTint) {
